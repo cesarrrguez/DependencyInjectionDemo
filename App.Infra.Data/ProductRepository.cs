@@ -2,7 +2,7 @@
 using App.Domain.Entities;
 using App.Domain.Interfaces.Repositories;
 
-namespace App.Infrastructure.Data
+namespace App.Infra.Data
 {
     public class ProductRepository : IProductRepository
     {

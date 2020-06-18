@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0725F10C-DA4E-42DE-95FF-05830F1A4BFE}</ProjectGuid>
+    <ProjectGuid>{DB6F07E2-BF3C-460F-A2DB-CC68518CE4CE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>App.Infrastructure</RootNamespace>
-    <AssemblyName>App.Infrastructure</AssemblyName>
+    <RootNamespace>App.Infra.Data</RootNamespace>
+    <AssemblyName>App.Infra.Data</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,12 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\ProductRepository.cs" />
+    <Compile Include="ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\App.Domain\App.Domain.csproj">
-      <Project>{7ea1870e-600e-4214-a3ad-9452269676a4}</Project>
+      <Project>{7EA1870E-600E-4214-A3AD-9452269676A4}</Project>
       <Name>App.Domain</Name>
     </ProjectReference>
   </ItemGroup>
