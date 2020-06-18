@@ -1,7 +1,7 @@
 ﻿using System;
-using App.Application.Services;
 using App.Domain.Entities;
-using App.Infrastructure.Data;
+using App.Domain.Interfaces.Services;
+using App.Infra.Bootstrap;
 
 namespace App.UI
 {
@@ -9,7 +9,7 @@ namespace App.UI
     {
         private static void Main()
         {
-            var productService = new ProductService(new ProductRepository());
+            var productService = IoC.Container.GetInstance<IProductService>();
 
             var product = new Product
             {

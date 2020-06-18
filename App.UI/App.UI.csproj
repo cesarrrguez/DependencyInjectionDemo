@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SimpleInjector, Version=4.0.8.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.4.0.8\lib\net45\SimpleInjector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,19 +52,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\App.Application\App.Application.csproj">
-      <Project>{D2C5DA20-28B3-4D46-980C-61C2ACECFB5F}</Project>
-      <Name>App.Application</Name>
-    </ProjectReference>
     <ProjectReference Include="..\App.Domain\App.Domain.csproj">
       <Project>{7EA1870E-600E-4214-A3AD-9452269676A4}</Project>
       <Name>App.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\App.Infrastructure\App.Infrastructure.csproj">
-      <Project>{0725F10C-DA4E-42DE-95FF-05830F1A4BFE}</Project>
-      <Name>App.Infrastructure</Name>
+    <ProjectReference Include="..\App.Infra.Bootstrap\App.Infra.Bootstrap.csproj">
+      <Project>{5DDE8C5F-7C69-4F51-8785-153358B4291F}</Project>
+      <Name>App.Infra.Bootstrap</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
